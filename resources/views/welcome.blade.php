@@ -1,33 +1,34 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.layout')
+@section('pageTitle') Laravel Comics @endsection
 
-        <title>Laravel 9 + Bootstrap Template</title>
+@section('content')
+<div id="main-comics">
+    {{-- <div class="jumbotron"> --}}
+        {{-- <img src="{{Vite::asset('resources/img/jumbotron.jpg')}}" alt="">       --}}
+    {{-- </div> --}}
 
-        {{-- Includiamo gli assets con la direttiva @vite --}}
-        @vite('resources/js/app.js')
-    </head>
-    <body>
+    <div class="container pt-3">
+        <h1>CURRENT SERIES</h1>
 
-        <main>
-            <div class="container">
-                <div class="row">
-                    <div class="col text-center">
-
-                        <div class="card">
-                            <div class="card-body">
-                                <img src="{{ Vite::asset('resources/img/laravel.png') }}" alt="">
-
-                                <h1 class="card-title">Laravel 9 + Bootstrap Template</h1>
-                            </div>
-                        </div>
-
+        <div class="my-cards">
+            <div class="container-fluid text-center">
+                <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3">
+                    
+                    {{-- @foreach($comics as $comic) --}}
+                    <div class="col">
+                        {{-- <img src="{{ vite::asset('resources/img/adv.jpg') }}" alt="comic"> --}}
+                        {{-- <div class="p-3">{{ $comic['series'] }}</div> --}} ciao
                     </div>
+                    {{-- @endforeach --}}
+                    
                 </div>
             </div>
-        </main>
+        </div>
 
-    </body>
-</html>
+        <div class="load">
+            <button><a href="#">LOAD MORE</a></button>
+        </div>
+    </div>
+</div>
+
+@endsection

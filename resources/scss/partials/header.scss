@@ -1,0 +1,45 @@
+header{
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 30;
+
+    > .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+
+        .logo > img{
+            width: 80px;
+        }
+
+        nav{
+            height: 100%;
+
+            > ul{
+                font-size: 0.85em;
+
+                > li{
+                    display: inline-block;
+                    line-height: 100px;
+                    height: 100%;
+
+                    > a{
+                        margin: 0 10px;
+                        display: inline-block;
+                        text-decoration: none;
+                        color: rgb(54, 54, 54);
+                        text-transform: uppercase;
+                        font-weight: bold;
+
+                        &:hover{
+                            color: rgb(0, 128, 255);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
