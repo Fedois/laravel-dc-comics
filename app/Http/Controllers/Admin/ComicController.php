@@ -16,9 +16,9 @@ class ComicController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
-    {
+    { 
+        //stampo tutti i comics
         $comics = Comic::all();
-        // dd($comics);
 
         return view('welcome', [
             'comics' => $comics
