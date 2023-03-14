@@ -3,9 +3,9 @@
 
 @section('content')
 <div id="main-comics">
-    {{-- <div class="jumbotron"> --}}
-        {{-- <img src="{{Vite::asset('resources/img/jumbotron.jpg')}}" alt="">       --}}
-    {{-- </div> --}}
+    <div class="jumbotron">
+        <img src="{{Vite::asset('resources/img/jumbotron.jpg')}}" alt="">      
+    </div>
 
     <div class="container pt-3">
         <h1>CURRENT SERIES</h1>
