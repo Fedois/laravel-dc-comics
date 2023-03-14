@@ -14,12 +14,14 @@
             <div class="container-fluid text-center">
                 <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3">
                     
-                    {{-- @foreach($comics as $comic) --}}
+                    @foreach($comics as $comic)
                     <div class="col">
-                        {{-- <img src="{{ vite::asset('resources/img/adv.jpg') }}" alt="comic"> --}}
-                        {{-- <div class="p-3">{{ $comic['series'] }}</div> --}} ciao
+                        <img src="{{ vite::asset('resources/img/adv.jpg') }}" alt="comic">
+                        <div class="info-card p-3">
+                            <h3 class="fs-5">{{ $comic->title }}</h3>
+                        </div>
                     </div>
-                    {{-- @endforeach --}}
+                    @endforeach
                     
                 </div>
             </div>
