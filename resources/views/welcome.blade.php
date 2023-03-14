@@ -15,12 +15,14 @@
                 <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3">
                     
                     @foreach($comics as $comic)
-                    <div class="col">
-                        <img src="{{ vite::asset('resources/img/adv.jpg') }}" alt="comic">
-                        <div class="info-card p-3">
-                            <h3 class="fs-5">{{ $comic->title }}</h3>
-                        </div>
-                    </div>
+                        <a href="">
+                            <div class="col">
+                                <img src="{{ vite::asset('resources/img/adv.jpg') }}" alt="comic">
+                                <div class="info-card p-3">
+                                    <h3 class="fs-5 text-white">{{ $comic->title }}</h3>
+                                </div>
+                            </div>
+                        </a>
                     @endforeach
                     
                 </div>
