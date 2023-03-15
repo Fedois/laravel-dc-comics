@@ -15,7 +15,7 @@
                 <div class="row row-cols-2 row-cols-lg-6 g-2 g-lg-3">
                     
                     @foreach($comics as $comic)
-                        <a href="">
+                        <a href="{{ route('comics.show', $comic->id) }}">
                             <div class="col">
                                 <img src="{{ vite::asset('resources/img/adv.jpg') }}" alt="comic">
                                 <div class="info-card p-3">
