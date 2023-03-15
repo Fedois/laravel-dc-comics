@@ -6,7 +6,7 @@
     
     <div class="load text-center p-5">
         <button>
-            <a href="{{ route('comics.index') }}" class="p-2">VIEW COMICS</a>
+            <a href="{{ route('comics.index') }}" class="p-2">VEDI TUTTI I COMICS</a>
         </button>
     </div>
 

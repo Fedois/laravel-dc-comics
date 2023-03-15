@@ -18,32 +18,32 @@
             
             <div class="mb-3">
                 <label for="title" class="form-label">titolo</label>
-                <input required type="text" name="title" class="form-control" id="title" placeholder="{{ $comic->title }}">
+                <input required type="text" name="title" class="form-control" id="title" value="{{ $comic->title }}">
             </div>
 
             <div class="mb-3">
                 <label for="thumb" class="form-label">Immagine</label>
-                <input required type="text" name="thumb" class="form-control" id="thumb" placeholder="{{ $comic->thumb }}">
+                <input required type="text" name="thumb" class="form-control" id="thumb" value="{{ $comic->thumb }}">
             </div>
 
             <div class="mb-3">
                 <label for="series" class="form-label">Series</label>
-                <input required type="text" name="series" class="form-control" id="series" placeholder="{{ $comic->series }}">
+                <input required type="text" name="series" class="form-control" id="series" value="{{ $comic->series }}">
             </div>
 
             <div class="mb-3">
                 <label for="type" class="form-label">tipo</label>
-                <input required type="text" name="type" class="form-control" id="type" placeholder="{{ $comic->type }}">
+                <input required type="text" name="type" class="form-control" id="type" value="{{ $comic->type }}">
             </div>
 
             <div class="mb-3">
                 <label for="sale_date" class="form-label">Data vendita</label>
-                <input required type="text" name="sale_date" class="form-control" id="sale_date" placeholder="{{ $comic->sale_date }}">
+                <input required type="text" name="sale_date" class="form-control" id="sale_date" value="{{ $comic->sale_date }}">
             </div>
 
             <div class="mb-3">
                 <label for="price" class="form-label">prezzo</label>
-                <input required type="text" name="price" class="form-control" id="price" placeholder="{{ $comic->price }}">
+                <input required type="text" name="price" class="form-control" id="price" value="{{ $comic->price }}">
             </div>
 
             <div class="mb-3">

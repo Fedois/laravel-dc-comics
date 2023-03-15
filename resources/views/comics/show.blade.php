@@ -14,9 +14,37 @@
             <img src="" alt="comic">
             <h1>{{ $comic->title }}</h1>
 
-            <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-warning mt-3">
+            <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-warning">
                 modifica
             </a>
+
+            <form action="{{ route('comics.destroy', $comic->id) }}" method="POST" class="d-inline-block">
+                @csrf
+                @method('delete')
+                
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Elimina
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">Conferma Eliminazione</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                Sei sicuro di voler eliminare? se confermi non pui più tornare indietro
+                            </div>
+                            <div class="modal-footer">
+                                <button type="submit" class="btn btn-primary">Confermo</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
     
         <div class="content-dx w-75">
