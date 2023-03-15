@@ -4,6 +4,10 @@
 @section('content')
 
 <main class="bg-dark p-3">
+    <a href="{{ route('comics.index') }}" class="btn btn-primary mb-3">
+        torna indietro
+    </a>
+
     <div class="container bg-white p-3">
         <h1 class="text-center">Aggiungi Comic</h1>
 

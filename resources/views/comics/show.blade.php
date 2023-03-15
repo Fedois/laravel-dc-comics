@@ -13,6 +13,10 @@
             {{-- <img src="{{ $comic->thumb }}" alt="comic"> --}}
             <img src="" alt="comic">
             <h1>{{ $comic->title }}</h1>
+
+            <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-warning mt-3">
+                modifica
+            </a>
         </div>
     
         <div class="content-dx w-75">
