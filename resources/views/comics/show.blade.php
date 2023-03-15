@@ -4,9 +4,14 @@
 @section('content')
 
 <div class="container-single-card bg-dark p-5">
+    <a href="{{ route('comics.index') }}" class="btn btn-primary mb-3">
+        torna indietro
+    </a>
+
     <div class="box bg-white d-flex p-3">
         <div class="content-sx w-25">
-            <img src="{{ $comic->thumb }}" alt="comic">
+            {{-- <img src="{{ $comic->thumb }}" alt="comic"> --}}
+            <img src="" alt="comic">
             <h1>{{ $comic->title }}</h1>
         </div>
     

@@ -30,7 +30,7 @@
         </div>
 
         <div class="load">
-            <button><a href="#">LOAD MORE</a></button>
+            <button><a href="{{ route('comics.create') }}">AGGIUNGI COMIC</a></button>
         </div>
     </div>
 </div>
