@@ -41,6 +41,12 @@
                 <input required type="text" name="sale_date" class="form-control" id="sale_date" value="{{ $comic->sale_date }}">
             </div>
 
+            
+            <div class="mb-3">
+                <label for="sale_date" class="form-label">Data vendita</label>
+                <input required type="date" name="sale_date" class="form-control" id="sale_date" value="{{ $comic->sale_date }}">
+            </div>
+
             <div class="mb-3">
                 <label for="price" class="form-label">prezzo</label>
                 <input required type="text" name="price" class="form-control" id="price" value="{{ $comic->price }}">

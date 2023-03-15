@@ -10,8 +10,9 @@
 
     <div class="box bg-white d-flex p-3">
         <div class="content-sx w-25">
-            {{-- <img src="{{ $comic->thumb }}" alt="comic"> --}}
-            <img src="" alt="comic">
+            <img src="{{ $comic->thumb }}" alt="comic">
+            {{-- <img src="{{ vite::asset('resources/img/adv.jpg') }}" alt="comic"> --}}
+            
             <h1>{{ $comic->title }}</h1>
 
             <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-warning">
@@ -36,7 +37,7 @@
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                Sei sicuro di voler eliminare? se confermi non pui più tornare indietro
+                                Sei sicuro di voler eliminare? se confermi non puoi più tornare indietro
                             </div>
                             <div class="modal-footer">
                                 <button type="submit" class="btn btn-primary">Confermo</button>
