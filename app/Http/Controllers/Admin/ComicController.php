@@ -20,7 +20,7 @@ class ComicController extends Controller
         //stampo tutti i comics
         $comics = Comic::all();
 
-        return view('welcome', [
+        return view('comics.index', [
             'comics' => $comics
         ]);
     }
@@ -54,7 +54,7 @@ class ComicController extends Controller
      */
     public function show($id)
     {
-        //
+
     }
 
     /**
