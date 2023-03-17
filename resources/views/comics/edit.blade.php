@@ -27,39 +27,34 @@
             @method('PUT')
             
             <div class="mb-3">
-                <label for="title" class="form-label">titolo</label>
-                <input type="text" name="title" class="form-control" id="title" value="{{ $comic->title }}">
+                <label for="title" class="form-label @error('title') text-danger @enderror">titolo</label>
+                <input type="text" name="title" class="form-control @error('title') border border-danger @enderror" id="title" value="{{ $comic->title }}">
             </div>
 
             <div class="mb-3">
-                <label for="thumb" class="form-label">Immagine</label>
-                <input type="text" name="thumb" class="form-control" id="thumb" value="{{ $comic->thumb }}">
+                <label for="thumb" class="form-label @error('thumb') text-danger @enderror">Immagine</label>
+                <input type="text" name="thumb" class="form-control @error('thumb') border border-danger @enderror" id="thumb" value="{{ $comic->thumb }}">
             </div>
 
             <div class="mb-3">
-                <label for="series" class="form-label">Series</label>
-                <input type="text" name="series" class="form-control" id="series" value="{{ $comic->series }}">
+                <label for="series" class="form-label @error('series') text-danger @enderror">Series</label>
+                <input type="text" name="series" class="form-control @error('series') border border-danger @enderror" id="series" value="{{ $comic->series }}">
             </div>
 
             <div class="mb-3">
-                <label for="type" class="form-label">tipo</label>
-                <input type="text" name="type" class="form-control" id="type" value="{{ $comic->type }}">
-            </div>
-
-            <div class="mb-3">
-                <label for="sale_date" class="form-label">Data vendita</label>
-                <input type="text" name="sale_date" class="form-control" id="sale_date" value="{{ $comic->sale_date }}">
+                <label for="type" class="form-label @error('type') text-danger @enderror">tipo</label>
+                <input type="text" name="type" class="form-control @error('type') border border-danger @enderror" id="type" value="{{ $comic->type }}">
             </div>
 
             
             <div class="mb-3">
-                <label for="sale_date" class="form-label">Data vendita</label>
-                <input type="date" name="sale_date" class="form-control" id="sale_date" value="{{ $comic->sale_date }}">
+                <label for="sale_date" class="form-label @error('sale_date') text-danger @enderror">Data vendita</label>
+                <input type="date" name="sale_date" class="form-control @error('sale_date') border border-danger @enderror" id="sale_date" value="{{ $comic->sale_date }}">
             </div>
 
             <div class="mb-3">
-                <label for="price" class="form-label">prezzo</label>
-                <input type="text" name="price" class="form-control" id="price" value="{{ $comic->price }}">
+                <label for="price" class="form-label @error('price') text-danger @enderror">prezzo</label>
+                <input type="text" name="price" class="form-control @error('price') border border-danger @enderror" id="price" value="{{ $comic->price }}">
             </div>
 
             <div class="mb-3">
