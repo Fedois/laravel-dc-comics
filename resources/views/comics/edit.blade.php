@@ -11,6 +11,16 @@
     <div class="container bg-white p-3">
         <h1 class="text-center">Modifica Comic</h1>
 
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li> -> {{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+
         <form action="{{ route('comics.update', $comic->id) }}" method="POST">
             @csrf
 
@@ -18,38 +28,38 @@
             
             <div class="mb-3">
                 <label for="title" class="form-label">titolo</label>
-                <input required type="text" name="title" class="form-control" id="title" value="{{ $comic->title }}">
+                <input type="text" name="title" class="form-control" id="title" value="{{ $comic->title }}">
             </div>
 
             <div class="mb-3">
                 <label for="thumb" class="form-label">Immagine</label>
-                <input required type="text" name="thumb" class="form-control" id="thumb" value="{{ $comic->thumb }}">
+                <input type="text" name="thumb" class="form-control" id="thumb" value="{{ $comic->thumb }}">
             </div>
 
             <div class="mb-3">
                 <label for="series" class="form-label">Series</label>
-                <input required type="text" name="series" class="form-control" id="series" value="{{ $comic->series }}">
+                <input type="text" name="series" class="form-control" id="series" value="{{ $comic->series }}">
             </div>
 
             <div class="mb-3">
                 <label for="type" class="form-label">tipo</label>
-                <input required type="text" name="type" class="form-control" id="type" value="{{ $comic->type }}">
+                <input type="text" name="type" class="form-control" id="type" value="{{ $comic->type }}">
             </div>
 
             <div class="mb-3">
                 <label for="sale_date" class="form-label">Data vendita</label>
-                <input required type="text" name="sale_date" class="form-control" id="sale_date" value="{{ $comic->sale_date }}">
+                <input type="text" name="sale_date" class="form-control" id="sale_date" value="{{ $comic->sale_date }}">
             </div>
 
             
             <div class="mb-3">
                 <label for="sale_date" class="form-label">Data vendita</label>
-                <input required type="date" name="sale_date" class="form-control" id="sale_date" value="{{ $comic->sale_date }}">
+                <input type="date" name="sale_date" class="form-control" id="sale_date" value="{{ $comic->sale_date }}">
             </div>
 
             <div class="mb-3">
                 <label for="price" class="form-label">prezzo</label>
-                <input required type="text" name="price" class="form-control" id="price" value="{{ $comic->price }}">
+                <input type="text" name="price" class="form-control" id="price" value="{{ $comic->price }}">
             </div>
 
             <div class="mb-3">

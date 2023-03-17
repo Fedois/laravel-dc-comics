@@ -43,7 +43,7 @@ class ComicController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Comic $request)
+    public function store(ComicRequest $request)
     {
         $data = $request->all();
 
@@ -93,7 +93,7 @@ class ComicController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(ComicRequest $request, $id)
     {
         $comic = Comic::findOrFail($id);
         $data = $request->all();
