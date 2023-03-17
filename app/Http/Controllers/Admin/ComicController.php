@@ -8,6 +8,8 @@ use Illuminate\Http\Request;
 // models
 use App\Models\Comic;
 
+// request
+use App\Http\Requests\ComicRequest;
 class ComicController extends Controller
 {
     /**
@@ -41,7 +43,7 @@ class ComicController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Comic $request)
     {
         $data = $request->all();
 
