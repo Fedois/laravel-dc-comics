@@ -26,37 +26,37 @@
             
             <div class="mb-3">
                 <label for="title" class="form-label">titolo</label>
-                <input type="text" name="title" class="form-control" id="title" placeholder="inserisci esempio: batman...">
+                <input type="text" name="title" class="form-control" id="title" value="{{ old('title') }}" placeholder="inserisci esempio: batman...">
             </div>
 
             <div class="mb-3">
                 <label for="thumb" class="form-label">Immagine</label>
-                <input type="text" name="thumb" class="form-control" id="thumb" placeholder="inserisci esempio: https...">
+                <input type="text" name="thumb" class="form-control" id="thumb" value="{{ old('thumb') }}" placeholder="inserisci esempio: https...">
             </div>
 
             <div class="mb-3">
                 <label for="series" class="form-label">Series</label>
-                <input type="text" name="series" class="form-control" id="series" placeholder="inserisci esempio: action comics...">
+                <input type="text" name="series" class="form-control" id="series" value="{{ old('series') }}" placeholder="inserisci esempio: action comics...">
             </div>
 
             <div class="mb-3">
                 <label for="type" class="form-label">tipo</label>
-                <input type="text" name="type" class="form-control" id="type" placeholder="inserisci esempio: comic book">
+                <input type="text" name="type" class="form-control" id="type" value="{{ old('type') }}" placeholder="inserisci esempio: comic book">
             </div>
 
             <div class="mb-3">
                 <label for="sale_date" class="form-label">Data vendita</label>
-                <input type="date" name="sale_date" class="form-control" id="sale_date">
+                <input type="date" name="sale_date" class="form-control" id="sale_date" value="{{ old('sale_date') }}">
             </div>
 
             <div class="mb-3">
                 <label for="price" class="form-label">prezzo</label>
-                <input type="text" name="price" class="form-control" id="price" placeholder="inserisci esempio: 3.99">
+                <input type="text" name="price" class="form-control" id="price" value="{{ old('price') }}" placeholder="inserisci esempio: 3.99">
             </div>
 
             <div class="mb-3">
                 <label for="description" class="form-label">Descrizione</label>
-                <textarea class="form-control" name="description" id="description" rows="3"></textarea>
+                <textarea class="form-control" name="description" id="description" rows="3">{{ old('description') }}</textarea>
             </div>
 
             <button type="submit" class="btn btn-primary">SALVA</button>
